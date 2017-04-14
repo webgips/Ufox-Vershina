@@ -1,0 +1,52 @@
+.parallax{
+	overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    &__bg{
+		background-color: #0D1720; 		
+	    position: absolute;
+	    top: -5%;
+	    right: -5%;
+	    bottom: -5%;
+	    left: -5%;    	   		
+    }
+    &__graf{    	
+		background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    position: absolute;
+	    top: -5%;
+	    right: -5%;
+	    bottom: -8%;
+	    left: -5%;    
+    	background-image: url(../img/back_graf.png);    		
+    }
+    &__layer{
+    	background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    position: absolute;
+	    top: -5%;
+	    right: -5%;
+	    bottom: -5%;
+	    left: -5%;    	
+    	&-1{
+    		background-image: url(../img/back_0.png);    		
+    	}
+    	&-2{
+    		background-image: url(../img/back_1.png);    		
+    	}
+    	&-3{
+    		background-image: url(../img/back_2.png);    		
+    	}    	
+    	&-5{    	
+    		background-image: url(../img/back_front.png);    		
+    	}  	
+    	
+    }
+}

@@ -1,6 +1,6 @@
 html,body{
     height: 100%;
-    width: 100%;    
+    // width: 100%;    
 }
 html{
     font-size: 18px;
@@ -19,6 +19,7 @@ body{
     font-family: 'LatoRegular', sans serif;     
     color: #fff;
     font-size: 18px;
+    position: relative;
 }
 *{
     box-sizing: border-box;
@@ -31,15 +32,16 @@ ul {
 }
 .wrapper{
     overflow: hidden;   
-    width: 100%;
-    min-height: 100%; 
-    background: url(../img/back.png) no-repeat;
-    background-size: cover;
-    &:after{
-        content: "";
-        display: block;
-        height: 60px;
-    }   
+    width: 100%;   
+    min-height: 100vh;
+    height: 100%;
+    position: relative;
+    
+    // &:after{
+    //     content: "";
+    //     display: block;
+    //     height: 60px;
+    // }   
 }
 .container{
     margin: 0 auto;
@@ -66,8 +68,9 @@ ul {
     height: 50px;
     text-align: center;   
     border-radius: 4px;
-    background-color: rgba(#1b1b1b,.1);
+    background-color: rgba(#fff,.2);
     border: none;
+    color: rgba(#fff,.8);
     &::placeholder{
         color: rgba(#fff,.6);
         font-size: 14px;
@@ -86,6 +89,12 @@ ul {
     color: #1b1b1b;
     background-color: #fff;
 
+}
+input{
+    outline: none;
+    &:focus{
+        outline: none;
+    }
 }
 input[type='number'] {
     -moz-appearance:textfield;

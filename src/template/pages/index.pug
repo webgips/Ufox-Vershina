@@ -24,7 +24,15 @@ html
         <!--[if lt IE 9]>
         script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
         <![endif]--> 
-    body           
+    body  
+        .parallax
+            .parallax__bg    
+            .parallax__layer.parallax__layer-1
+            .parallax__layer.parallax__layer-2                 
+            .parallax__layer.parallax__layer-3                 
+            .parallax__graf               
+            .parallax__layer.parallax__layer-5                 
+            
         .wrapper 
             header.header
                 .container
@@ -42,9 +50,6 @@ html
                         input.form__input-name.base-input(type='text' name='name' placeholder='Имя')     
                         input.form__input-phone.base-input(type='tel' name='phone' placeholder='Телефон')     
                         input.form__input-submit.btn(type='submit' name='submit' value='Отправить заявку')
-                        .form__descr *только для собственников с доходом от 2000$ в месяц        
-                        
-
-        footer.footer
+                        .form__descr *только для собственников с доходом от 2000$ в месяц 
             
 
