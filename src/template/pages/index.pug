@@ -1,0 +1,50 @@
+- var title = 'Ufox Vershina'
+
+
+mixin svg (className, fileName)
+    svg(class=className)
+        use(xlink:href=`/assets/img/sprite.svg#${fileName}`)
+
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title #{title}           
+        //- meta(content='Гироскутеры Smart Balance в Минске. Цена от 549 рублей. Официальный представитель. Скидка 5 рублей за размещение ссылки в соц. сетях. Сумка в подарок. Гаратния 1 год. Лучшее соотношение цены и качества. Звоните.', name='description')
+        //- meta(content='купить гироскутер, купить smart balance, гироскутер Минск, гироскутер цена, smart balance offroad, мини сигвей', name='keywords')
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+        //- favicon block start
+        
+        //- favicon block end 
+        link(rel='stylesheet' href='./assets/css/foundation.css')
+        link(rel='stylesheet' href='./assets/css/main.css')        
+        script(src='./assets/js/foundation.js' defer)           
+        script(src='./assets/js/app.min.js' defer)
+        <!--[if lt IE 9]>
+        script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+        <![endif]--> 
+    body           
+        .wrapper 
+            header.header
+                .container
+                    .header__logo 
+            .container
+                section.hero                
+                    h1.hero__title
+                        span.hero__title-big Вершина
+                        | Программа спасения белорусских предпринимателей   
+                    .hero__descr
+                        | Ваш бизнес принесет в 
+                        span.white-bg 5-7 раз больше
+                        |  за следующие 6 месяцев. Получи именное приглашение на закрытую встречу собственников бизнеса в Беларуси (всего 30 персон)  
+                    form.hero__form
+                        input.form__input-name.base-input(type='text' name='name' placeholder='Имя')     
+                        input.form__input-phone.base-input(type='tel' name='phone' placeholder='Телефон')     
+                        input.form__input-submit.btn(type='submit' name='submit' value='Отправить заявку')
+                        .form__descr *только для собственников с доходом от 2000$ в месяц        
+                        
+
+        footer.footer
+            
+

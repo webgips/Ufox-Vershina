@@ -1,0 +1,38 @@
+.hero{
+	width: 60%;
+	&__title{
+		font-size: 32px;
+		font-family: "LatoBold";
+		letter-spacing: 2px;
+		margin: 0 0 20px;
+		&-big{
+			text-transform: uppercase;
+			display: block;
+		}		
+	}
+	&__descr{
+		margin-bottom: 20px;
+	}
+	&__form{
+		display: flex;
+    	flex-direction: column;
+	    input{
+	    	display: block;
+	    	margin-bottom: 20px;
+	    }
+	}	
+}
+.form{	
+	&__input-submit{
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-family: "LatoBold";
+		letter-spacing: 1px;
+	}
+	&__descr{		
+		max-width: 230px;
+		font-size: 14px;
+  		color: rgba(255, 255, 255, 0.8);
+	}
+}
