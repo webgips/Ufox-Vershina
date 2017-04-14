@@ -1,6 +1,6 @@
 $(function() {
     
-    if($(window).width()>= 800){
+    if($(window).width()>= 1024){
         var parallax = (function(){
             var paralaxContainer = $('.parallax'),
                 layers = paralaxContainer.find('.parallax__layer');
@@ -11,15 +11,12 @@ $(function() {
                 });
             });
             return  {
-                init: function(){
-                    console.log('init');
-                    console.log('')
+                init: function(){                    
                     $(window).on('mousemove',function (e) {
                         var mouseX = (e.pageX),
                             mouseY = (e.pageY),
                             X = (window.innerWidth / 2 ) - mouseX,
-                            Y = (window.innerHeight / 2 ) - mouseY;
-                       console.log(mouseX , mouseY)         
+                            Y = (window.innerHeight / 2 ) - mouseY;                         
                         layers.each(function (index, value){
                             var widthPosition = X * (index / 120 ),
                                 heightPosition = Y * (index / 120 ),

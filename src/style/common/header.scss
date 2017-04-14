@@ -4,6 +4,13 @@
     display: flex;
     align-items: center;
     margin-bottom: 50px;
+    .container{
+    	@include phones{
+		    display: flex;
+		    flex-direction: row;
+		    justify-content: flex-end;
+    	}
+    }
 	&__logo{
 		background: url(../img/logo.png) no-repeat center;
 		width: 50px;

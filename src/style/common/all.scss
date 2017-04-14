@@ -1,6 +1,6 @@
 html,body{
-    height: 100%;
-    // width: 100%;    
+    // height: 100%;
+    width: 100%;    
 }
 html{
     font-size: 18px;
@@ -19,7 +19,7 @@ body{
     font-family: 'LatoRegular', sans serif;     
     color: #fff;
     font-size: 18px;
-    position: relative;
+    position: relative;    
     @include laptop{
         font-size: 16px;
     }
@@ -57,9 +57,9 @@ ul {
     @include tablet{
         width: 90%;
     }
-    // @include phones{
-    //     width: 80%;
-    // }
+    @include phones{
+        width: 100%;
+    }
 }
 .base-title{
     font-size: 52px;    
@@ -98,6 +98,26 @@ ul {
     color: #1b1b1b;
     background-color: #fff;
 
+}
+.title__small{
+    font-size: 28px;
+    @include phones{
+        font-size: 18px;
+    }
+}
+.pink{
+    color: #5daff5;
+    font-size: 68px;
+    @include laptop{
+        font-size: 56px;
+    }
+    @include desktop{
+        font-size: 50px;
+    }
+    @include phones{
+        margin-right: 50px;
+        font-size: 40px;
+    }
 }
 input{
     outline: none;

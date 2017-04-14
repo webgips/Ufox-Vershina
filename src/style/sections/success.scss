@@ -1,0 +1,99 @@
+.success{
+	margin-bottom: 50px;
+	position: relative;
+	.container{
+		display: flex;
+		flex-direction: row;
+    	justify-content: space-between;
+	}
+	&-wrap{
+		background-image: url(../img/back_suc.jpg);
+    	background-size: contain;
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	background-color: black;
+		.header{
+			margin-bottom: 110px;
+			@include laptop{
+				margin-bottom: 40px;
+			}
+		}
+	}
+	&__title{
+		@extend .hero__title;
+		margin-bottom: 28px;
+	}
+	&__text{
+		margin-bottom: 20px;
+	}
+	&__video{
+		width: 620px;
+  		height: 360px;
+  		// width: 80%;
+  		// height: 90%;
+  		@include laptop{
+  			width: 420px;
+    		height: 280px;
+  		}
+  		@include phones{
+  			width: 300px;
+   		 	height: 240px;
+  		}
+	}
+	&__left{
+		width: 65%;
+		@include tablet{
+			width: 70%;
+		}
+		@include phones{
+			width: 100%;
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		    justify-content: center;
+		    padding: 0 10px;
+		}
+	}
+	&__right{
+	    width: 10%;
+    	white-space: nowrap;
+		font-size: 24px;
+		@include laptop{
+			width: 18%;
+		}
+		@include tablet{
+		    width: 21%;
+		}
+		@include phones{
+			width: 0;
+			font-size: 16px;
+		}
+	}
+	&__where{
+		display: flex;
+		flex-direction: column;
+		@include phones{
+			position: relative;
+		    flex-direction: row;
+		    width: 80%;
+		    position: absolute;
+		    left: 22px;
+		    top: -100px;
+		    align-items: baseline;		    
+		}
+	}	
+}
+.where__first{
+	@include phones{
+		position: absolute;
+    bottom: -10px;
+    left: 0;
+	}
+}
+.where__sec{
+	@include phones{
+		position: absolute;
+	    bottom: -10px;
+	    left: 120px;
+	}
+}

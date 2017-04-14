@@ -1,0 +1,51 @@
+- var title = 'Ufox Vershina'
+
+
+mixin svg (className, fileName)
+    svg(class=className)
+        use(xlink:href=`/assets/img/sprite.svg#${fileName}`)
+
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title #{title}           
+        //- meta(content='Гироскутеры Smart Balance в Минске. Цена от 549 рублей. Официальный представитель. Скидка 5 рублей за размещение ссылки в соц. сетях. Сумка в подарок. Гаратния 1 год. Лучшее соотношение цены и качества. Звоните.', name='description')
+        //- meta(content='купить гироскутер, купить smart balance, гироскутер Минск, гироскутер цена, smart balance offroad, мини сигвей', name='keywords')
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+        //- favicon block start
+        
+        //- favicon block end 
+        link(rel='stylesheet' href='./assets/css/foundation.css')
+        link(rel='stylesheet' href='./assets/css/main.css')        
+        script(src='./assets/js/foundation.js' defer)           
+        script(src='./assets/js/app.min.js' defer)
+        <!--[if lt IE 9]>
+        script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+        <![endif]--> 
+    body  
+        .wrapper.success-wrap
+            header.header
+                .container
+                    .header__logo 
+            section.success
+                .container               
+                    .success__left
+                        h1.success__title
+                            | Игорь Денис, поздравляем! 
+                            br
+                            span.title__small 
+                                | Вы приглашены на 
+                                span.white-bg секретную, закрытую 
+                                | встречу!
+                        .success__text А пока посмотрите видео с наших последних встреч закрытой программы 
+                        .success__video 
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/IKoSbzLLPws" frameborder="0" allowfullscreen></iframe>
+                    .success__right
+                        .success__where
+                            span.pink 20
+                            span.where__first апреля
+                            span.pink 19.00                            
+                              
+
