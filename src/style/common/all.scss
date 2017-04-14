@@ -20,6 +20,9 @@ body{
     color: #fff;
     font-size: 18px;
     position: relative;
+    @include laptop{
+        font-size: 16px;
+    }
 }
 *{
     box-sizing: border-box;
@@ -52,11 +55,11 @@ ul {
         width: 760px;
     }
     @include tablet{
-        width: 480px;
+        width: 90%;
     }
-    @include phones{
-        width: 95%;
-    }
+    // @include phones{
+    //     width: 80%;
+    // }
 }
 .base-title{
     font-size: 52px;    
@@ -74,6 +77,12 @@ ul {
     &::placeholder{
         color: rgba(#fff,.6);
         font-size: 14px;
+    }
+    @include tablet{
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    @include phones{
+        background-color: rgba(#fff,.2);
     }
 }
 

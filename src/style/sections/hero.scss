@@ -8,7 +8,16 @@
 		&-big{
 			text-transform: uppercase;
 			display: block;
-		}		
+		}
+		@include laptop{
+			font-size: 28px;
+		}
+		@include tablet{
+		    margin: 0 0 10px;
+		}	
+		@include phones{
+			font-size: 24px;
+		}			
 	}
 	&__descr{
 		margin-bottom: 20px;
@@ -20,7 +29,16 @@
 	    	display: block;
 	    	margin-bottom: 20px;
 	    }
+	    @include phones{
+    	    align-items: center;
+	    }
+	}
+	@include laptop{
+	    width: 70%;	
 	}	
+	@include phones{
+		width: 100%;
+	}
 }
 .form{	
 	&__input-submit{
@@ -34,5 +52,8 @@
 		max-width: 230px;
 		font-size: 14px;
   		color: rgba(255, 255, 255, 0.8);
-	}
+  		@include phones{
+  			text-align: center;
+  		}
+	}	
 }

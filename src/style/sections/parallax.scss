@@ -24,7 +24,13 @@
 	    right: -5%;
 	    bottom: -8%;
 	    left: -5%;    
-    	background-image: url(../img/back_graf.png);    		
+    	background-image: url(../img/back_graf.png);  
+    	@include tablet{
+		    bottom: -12%;
+    	} 		
+    	@include phones{
+    			display: none;
+    	}	
     }
     &__layer{
     	background-repeat: no-repeat;
@@ -45,7 +51,13 @@
     		background-image: url(../img/back_2.png);    		
     	}    	
     	&-5{    	
-    		background-image: url(../img/back_front.png);    		
+    		background-image: url(../img/back_front.png);   
+    		@include tablet{
+    			bottom: -75px;
+    		} 	
+    		@include phones{
+    			display: none;
+    		}	
     	}  	
     	
     }
