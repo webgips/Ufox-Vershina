@@ -8,7 +8,7 @@
 	}
 	&-wrap{
 		background-image: url(../img/back_suc.jpg);
-    	background-size: contain;
+    	background-size: cover;
     	background-position: center;
     	background-repeat: no-repeat;
     	background-color: black;
@@ -27,8 +27,8 @@
 		margin-bottom: 20px;
 	}
 	&__video{
-		width: 620px;
-  		height: 360px;
+	    width: 540px;
+    	height: 260px;
   		// width: 80%;
   		// height: 90%;
   		@include laptop{
@@ -41,9 +41,10 @@
   		}
 	}
 	&__left{
-		width: 65%;
+		width: 60%;
 		@include tablet{
 			width: 70%;
+			margin: 0 auto;
 		}
 		@include phones{
 			width: 100%;
@@ -55,14 +56,14 @@
 		}
 	}
 	&__right{
-	    width: 10%;
-    	white-space: nowrap;
+	    width: 18%;
+    	// white-space: nowrap;
 		font-size: 24px;
 		@include laptop{
-			width: 18%;
+			width: 22%;
 		}
 		@include tablet{
-		    width: 21%;
+	        width: 0;
 		}
 		@include phones{
 			width: 0;
@@ -72,14 +73,18 @@
 	&__where{
 		display: flex;
 		flex-direction: column;
-		@include phones{
+		@include tablet{
 			position: relative;
 		    flex-direction: row;
 		    width: 80%;
 		    position: absolute;
-		    left: 22px;
-		    top: -100px;
+		    left: 110px;
+    		top: -100px;
 		    align-items: baseline;		    
+		}
+		@include phones{			
+		    left: 22px;
+		    top: -100px;		    	    
 		}
 	}	
 }
@@ -93,7 +98,7 @@
 .where__sec{
 	@include phones{
 		position: absolute;
-	    bottom: -10px;
-	    left: 120px;
+        bottom: -35px;
+		left: 102px;
 	}
 }

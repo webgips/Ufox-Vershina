@@ -32,4 +32,23 @@ $(function() {
         }());
         parallax.init();
     }
+    $('.form__input-phone').inputmask("+375 (99) 999 99 99");   
+    $('.hero__form').on('submit',function(e){
+        e.preventDefault();
+        var form = $(this),
+            formData=form.serialize();              
+        if($(this).find('input[name=phone], input[name=name]').val()){
+            $.ajax({
+                url: '../thank_you/index.php',
+                type: 'POST',           
+                data: formData,
+                success: function(data) {               
+                    data = jQuery.parseJSON(data);                          
+                    if (data.status) {
+                        yaCounter44208574.reachGoal("zayavka")                        
+                    }                              
+                }
+            })  
+        }
+    });  
 });
